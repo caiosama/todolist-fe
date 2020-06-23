@@ -14,7 +14,7 @@ pipeline {
         JOB_NAME = "${JOB_NAME}".replace("/", "-")
 
         GIT_SSL_NO_VERIFY = true
-        GIT_CREDENTIALS = credentials('jenkins-git-creds')
+        // GIT_CREDENTIALS = credentials('jenkins-git-creds')
         GITLAB_DOMAIN = "gitlab.apps.lader.rht-labs.com"
         GITLAB_PROJECT = "<GIT_USERNAME>"
     }
